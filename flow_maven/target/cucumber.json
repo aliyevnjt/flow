@@ -1,0 +1,348 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-12T05:46:43.437Z",
+        "line": 4,
+        "name": "Purchase Requision Form",
+        "description": "",
+        "id": "purchase-requision-form;purchase-requision-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3615000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the login page",
+            "match": {
+              "location": "ui.stepdefinitions.LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4052000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User logs in application with username \"matt\" and password \"matt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"matt\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"matt\"",
+                  "offset": 59
+                }
+              ],
+              "location": "ui.stepdefinitions.LoginStepDefs.user_logs_in_application_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1039000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User clicks on data panel",
+            "match": {
+              "location": "ui.stepdefinitions.DashBoardStepDefs.user_clicks_on_data_panel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 231000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on \"Purchase Requsion Form\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Purchase Requsion Form\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepdefinitions.DashBoardStepDefs.user_clicks_on(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1437000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on \"PRF\" create",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PRF\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ui.stepdefinitions.DashBoardStepDefs.user_click_on_create(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select School \"School A\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"School A\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.select_School(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 539000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Select Department \"Science\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Science\"",
+                  "offset": 18
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.select_Department(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Input title \"Cucumber Test title\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cucumber Test title\"",
+                  "offset": 12
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.input_title(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Input description \"Cucumber Test description\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Cucumber Test description\"",
+                  "offset": 18
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.input_description(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click Add New",
+            "match": {
+              "location": "ui.stepdefinitions.FormsStepDefs.click_Add_New()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Select account \"Student\u0027s Supply\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Student\u0027s Supply\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.select_account(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "For \"title\" input \"hey vdfdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"title\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"hey vdfdf\"",
+                  "offset": 18
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.for_input(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "For \"description\" input \"hey\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"description\"",
+                  "offset": 4
+                },
+                {
+                  "val": "\"hey\"",
+                  "offset": 24
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.for_input(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Select vendor \"Amazon\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Amazon\"",
+                  "offset": 14
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.select_vendor(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Input url \"http://amazon.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://amazon.com\"",
+                  "offset": 10
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.input_url(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Input count \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 12
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.input_count(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Input price \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2\"",
+                  "offset": 12
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.input_price(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "Element should have focused {kp-link[data-action *\u003d \u0027kp-request--save\u0027]}\nElement: \u0027\u003ckp-link class\u003d\"button button-raised button-fill\" data-action\u003d\"kp-request--save-items\"\u003eSave All\u003c/kp-link\u003e\u0027\nActual value: Focused focusedElement: \u003cinput class\u003d\"kp-request--input input-focused input-with-value\" data-kp-item-input-id\u003d\"price\" data-kp-item-input-value\u003d\"2\" kp-sanitization\u003d\"currency\" placeholder\u003d\"Price per unit\" type\u003d\"text\" value\u003d\"2\"\u003e\u003c/input\u003e, current focusedElement: \u003ckp-link class\u003d\"button button-raised button-fill\" data-action\u003d\"kp-request--save-items\"\u003eSave All\u003c/kp-link\u003e\nScreenshot: file:/Users/nijataliyev/eclipse-workspace/flow_maven/build/reports/tests/1586670420436.0.png\nPage source: file:/Users/nijataliyev/eclipse-workspace/flow_maven/build/reports/tests/1586670420436.0.html\nTimeout: 4 s.\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)\n\tat com.codeborne.selenide.commands.Should.execute(Should.java:24)\n\tat com.codeborne.selenide.commands.Should.execute(Should.java:10)\n\tat com.codeborne.selenide.commands.Commands.execute(Commands.java:148)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)\n\tat com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)\n\tat com.sun.proxy.$Proxy12.shouldHave(Unknown Source)\n\tat ui.pageobjects.Forms.addSaveDelete(Forms.java:33)\n\tat ui.stepdefinitions.FormsStepDefs.all(FormsStepDefs.java:69)\n\tat ✽.\"save\" All(file:///Users/nijataliyev/eclipse-workspace/flow_maven/src/test/java/ui/features/purchase_req_from.feature:22)\n",
+              "duration": 4829000000,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "\"save\" All",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"save\"",
+                  "offset": 0
+                }
+              ],
+              "location": "ui.stepdefinitions.FormsStepDefs.all(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@req_form"
+          }
+        ]
+      }
+    ],
+    "name": "Purchase Requision Form",
+    "description": "",
+    "id": "purchase-requision-form",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/ui/features/purchase_req_from.feature",
+    "tags": []
+  }
+]
