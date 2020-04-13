@@ -30,8 +30,11 @@ public class Forms {
 	
 	public void addSaveDelete(String addSavedelete) {
 		SelenideElement element = $(byCssSelector("kp-link[data-action *= 'kp-request--" + addSavedelete + "']"));
-		element.shouldHave(Condition.focused);
-		element.click();
+		try {
+			element.wait(500);
+			element.click();
+		}catch (Exception e){}
+
 	}
 	
 	public void selectAccount(String account) {
