@@ -1,4 +1,4 @@
-Feature: Purchase Requision Form
+Feature: Purchase Requisition Form
 
   @req_form
   Scenario: Purchase Requision Form
