@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64cfd83c-0959-42ed-a60e-f2ef32fb52be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b22699c8-fae1-4cf8-b4b1-1819c9168e32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/features/purchase_req_from.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/features/purchase_req_from.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
