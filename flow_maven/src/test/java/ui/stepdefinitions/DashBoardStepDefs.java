@@ -9,7 +9,6 @@ public class DashBoardStepDefs {
 	@Then("User clicks on data panel")
 	public void user_clicks_on_data_panel() {
 	    db.clickOnDataPanel();
-	    Configuration.holdBrowserOpen = true;
 	}
 	
 	@Then("User clicks on {string}")
