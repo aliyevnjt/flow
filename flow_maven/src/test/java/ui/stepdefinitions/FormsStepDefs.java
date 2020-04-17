@@ -1,6 +1,9 @@
 package ui.stepdefinitions;
 
-import com.codeborne.selenide.Configuration;
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.*;
+
+import com.codeborne.selenide.SelenideElement;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import ui.pageobjects.Forms;
@@ -21,7 +24,8 @@ public class FormsStepDefs {
 
 	@Then("Input title {string}")
 	public void input_title(String title) {
-	   forms.inputTitle(title);
+
+		forms.inputTitle(title);
 	}
 
 	@Then("Input description {string}")
@@ -68,6 +72,25 @@ public class FormsStepDefs {
 	public void all(String addSaveDelete) throws InterruptedException {
 		forms.addSaveDelete(addSaveDelete);
 	}
+
+	@Given("User clicks on blue button")
+	public void user_clicks_on_blue_button() {
+		SelenideElement el = $(byCssSelector(".kp-button-blue"));
+		el.scrollIntoView(true);
+		el.click();
+	}
+
+	@Given("User clicks on {string} request")
+	public void user_clicks_on_request(String sendOrSave) {
+		forms.sendOrSaveRequest(sendOrSave);
+	}
+
+	@Given("Action is {string}")
+	public void action_is(String SendOrCancel) {
+		$(byText(SendOrCancel)).click();
+	}
+
+
 
 
 

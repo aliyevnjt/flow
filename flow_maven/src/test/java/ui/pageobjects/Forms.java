@@ -62,4 +62,9 @@ public class Forms {
 	public void inputPrice(String price) {
 		$(byCssSelector("[data-kp-item-input-id = 'price']")).setValue(price);
 	}
+
+	public void sendOrSaveRequest(String sendOrSave) {
+		$(byCssSelector("[data-action = 'kp-request--" + sendOrSave + "-request']")).click();
+
+	}
 }
