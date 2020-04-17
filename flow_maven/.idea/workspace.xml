@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b22699c8-fae1-4cf8-b4b1-1819c9168e32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ui/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/features/login.feature" afterDir="false" />
+    <list default="true" id="b28ee9fd-b7d5-4cd3-8128-ac2c29d3caad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/features/purchase_req_from.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/features/purchase_req_from.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
