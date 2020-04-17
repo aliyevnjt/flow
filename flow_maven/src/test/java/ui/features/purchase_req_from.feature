@@ -23,6 +23,7 @@ Feature: Purchase Requisition Form
   And User clicks on blue button
   And User clicks on "send" request
   And Action is "Send"
+  And Testing
 
   
   
