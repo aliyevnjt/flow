@@ -40,7 +40,7 @@
     </dependencies>
     <build>
         <plugins>
-            <!--plugin to run main method in Report.java class in utils package -->
+            <!--plugin to run main method in CucumberReportBuilder.java class in utils package -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -68,7 +68,8 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <systemPropertyVariables>
                         <browser>chrome</browser>
-                        <url>https://www.truecar.com/</url>
+                        <url>https://dev.flowlyst.io/v-20200326132512/</url>
+                        <headless>false</headless>
                         <buildDirectory>${project.build.directory}</buildDirectory>
                     </systemPropertyVariables>
                 </configuration>
