@@ -20,6 +20,10 @@ Feature: Purchase Requisition Form
   And Input count "10"
   And Input price "2"
   And "save" All
+  And User clicks on blue button
+  And User clicks on "send" request
+  And Action is "Send"
+
   
   
    

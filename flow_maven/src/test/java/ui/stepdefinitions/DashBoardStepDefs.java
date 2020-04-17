@@ -13,7 +13,8 @@ public class DashBoardStepDefs {
 	
 	@Then("User clicks on {string}")
 	public void user_clicks_on(String formName) {
-	    db.clickOnForm(formName);
+
+		db.clickOnForm(formName);
 	}
 
 	@Then("User click on {string} create")

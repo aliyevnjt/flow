@@ -9,7 +9,7 @@ public class LoginStepDefs {
 	private Login login = new Login();
 	@Given("User is on the login page")
 	public void user_is_on_the_login_page() {
-	    login.navigateToUrl();
+		login.navigateToUrl();
 	}
 
 	@Given("User logs in application with username {string} and password {string}")
