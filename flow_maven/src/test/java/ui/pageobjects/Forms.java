@@ -5,6 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selectors.byCssSelector;
 import static com.codeborne.selenide.Selectors.byId;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class Forms {
@@ -30,6 +31,7 @@ public class Forms {
 	
 	public void addSaveDelete(String addSavedelete) {
 		SelenideElement element = $(byCssSelector("kp-link[data-action *= 'kp-request--" + addSavedelete + "']"));
+		
 		try {
 			element.wait(500);
 			element.click();
@@ -64,7 +66,19 @@ public class Forms {
 	}
 
 	public void sendOrSaveRequest(String sendOrSave) {
-		$(byCssSelector("[data-action = 'kp-request--" + sendOrSave + "-request']")).click();
+		$(byCssSelector("[data-action = 'kp-request--"+ sendOrSave + "-request'] ")).click();
 
 	}
+//	public void blueBottomClick()  {
+//		$(byCssSelector("[class='kp-button-blue']")).doubleClick().click();;
+//		
+//	}
+//	
+//	public void SendOrCancel(String send)  {
+//		$(byText(send)).doubleClick();
+//		
+//	}
+	
+	
+	
 }

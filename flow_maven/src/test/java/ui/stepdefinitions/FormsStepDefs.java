@@ -69,26 +69,27 @@ public class FormsStepDefs {
 	}
 
 	@Then("{string} All")
-	public void all(String addSaveDelete) throws InterruptedException {
+	public void all(String addSaveDelete)  {
 		forms.addSaveDelete(addSaveDelete);
 	}
 
-	@Given("User clicks on blue button")
-	public void user_clicks_on_blue_button() {
-		SelenideElement el = $(byCssSelector(".kp-button-blue"));
-		el.scrollIntoView(true);
-		el.click();
-	}
-
-	@Given("User clicks on {string} request")
-	public void user_clicks_on_request(String sendOrSave) {
-		forms.sendOrSaveRequest(sendOrSave);
-	}
-
-	@Given("Action is {string}")
-	public void action_is(String SendOrCancel) {
-		$(byText(SendOrCancel)).click();
-	}
+//	@Given("User clicks on blue button")
+//	public void user_clicks_on_blue_button() {
+////		SelenideElement el = $(byCssSelector(".kp-button-blue"));
+////		el.scrollIntoView(true);
+////		el.click();
+//		forms.blueBottomClick();
+//	}
+//
+//	@Given("User clicks on {string} request")
+//	public void user_clicks_on_request(String sendOrSave) {
+//		forms.sendOrSaveRequest(sendOrSave);
+//	}
+//
+//	@Given("Action is {string}")
+//	public void action_is(String send) {
+//		forms.SendOrCancel(send);
+//	}
 
 
 
