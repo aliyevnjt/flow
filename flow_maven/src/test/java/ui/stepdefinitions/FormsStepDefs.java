@@ -3,9 +3,16 @@ package ui.stepdefinitions;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import ui.pageobjects.Forms;
 
 public class FormsStepDefs {
@@ -70,21 +77,24 @@ public class FormsStepDefs {
 
 	@Then("{string} All")
 	public void all(String addSaveDelete)  {
-		forms.addSaveDelete(addSaveDelete);
+		SelenideElement el = $(byCssSelector("[data-action *= 'kp-request--" + addSaveDelete + "-items']"));
+		sleep(1000);
+		el.click();
 	}
 
-//	@Given("User clicks on blue button")
-//	public void user_clicks_on_blue_button() {
-////		SelenideElement el = $(byCssSelector(".kp-button-blue"));
-////		el.scrollIntoView(true);
-////		el.click();
-//		forms.blueBottomClick();
-//	}
-//
-//	@Given("User clicks on {string} request")
-//	public void user_clicks_on_request(String sendOrSave) {
-//		forms.sendOrSaveRequest(sendOrSave);
-//	}
+	@Given("User clicks on blue button")
+	public void user_clicks_on_blue_button() {
+		sleep(2000);
+		SelenideElement el = $(byCssSelector("[class*='fab fab-right-top kp-request']"));
+		el.scrollIntoView(true);
+		el.click();
+	}
+
+	@Given("User clicks on {string} request")
+	public void user_clicks_on_request(String sendOrSave) {
+		sleep(1000);
+		$(byCssSelector("[data-action = 'kp-request--save-request']")).click();
+	}
 //
 //	@Given("Action is {string}")
 //	public void action_is(String send) {
