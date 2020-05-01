@@ -9,24 +9,20 @@ Feature: Purchase Requisition Form
   And User click on "PRF" create
   Then Select School "School A"
   And Select Department "Science"
-  And Input title "Cucumber Test title"
-  And Input description "Cucumber Test description"
+  And Input title "I will move"
+  And Input description "Out of New Hampshire"
   And Click Add New
   And Select account "Student's Supply"
-  And For "title" input "hey vdfdf"
-  And For "description" input "hey"
+  And For "title" input "Moving out"
+  And For "description" input "New Hampshire is a village"
   And Select vendor "Amazon"
   And Input url "http://amazon.com"
   And Input count "10"
   And Input price "2"
   And "save" All
   And User clicks on blue button
-  #And User clicks on "send" request
-  #And Action is "Send"
-  #And Testing
-
-  
-  
-   
-
-  
+    And User saves request
+#  And User clicks on send request
+    And User clicks on "OK" request
+    Then User clicks on data panel
+    And User clicks on "Purchase Requsion Form"

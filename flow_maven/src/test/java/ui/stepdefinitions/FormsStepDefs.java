@@ -84,23 +84,28 @@ public class FormsStepDefs {
 
 	@Given("User clicks on blue button")
 	public void user_clicks_on_blue_button() {
-		sleep(2000);
-		SelenideElement el = $(byCssSelector("[class*='fab fab-right-top kp-request']"));
-		el.scrollIntoView(true);
+		sleep(1000);
+		SelenideElement el = $(byCssSelector("a[class='kp-button-blue']"));
+		el.scrollIntoView("{block: \"end\"}");
 		el.click();
 	}
 
-	@Given("User clicks on {string} request")
-	public void user_clicks_on_request(String sendOrSave) {
-		sleep(1000);
-		$(byCssSelector("[data-action = 'kp-request--save-request']")).click();
+	@Given("User clicks on send request")
+	public void user_clicks_on_send_request(){
+		$(byText("upload_circle")).click();
+		$(byText("Send")).click();
 	}
-//
-//	@Given("Action is {string}")
-//	public void action_is(String send) {
-//		forms.SendOrCancel(send);
-//	}
 
+	@Given("User saves request")
+	public void user_saves_request() {
+		$(byText("cloud_upload")).click();
+	}
+
+	@Given("User clicks on {string} request")
+	public void user_clicks_on_request(String string) {
+		$(byText("OK")).click();
+		$(byCssSelector("[id = 'kp-request--page'] [data-panel='left']")).click();
+	}
 
 
 
