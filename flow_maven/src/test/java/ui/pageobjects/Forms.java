@@ -2,11 +2,12 @@ package ui.pageobjects;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-
-import static com.codeborne.selenide.Selectors.byCssSelector;
-import static com.codeborne.selenide.Selectors.byId;
-import static com.codeborne.selenide.Selectors.byText;
+import com.codeborne.selenide.WebDriverRunner;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.JavascriptExecutor;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.actions;
 
 public class Forms {
 	public void selectSchool(String school) {
@@ -31,12 +32,15 @@ public class Forms {
 	
 	public void addSaveDelete(String addSavedelete) {
 		SelenideElement element = $(byCssSelector("kp-link[data-action *= 'kp-request--" + addSavedelete + "']"));
-		
-		try {
-			element.wait(500);
-			element.click();
-		}catch (Exception e){}
-
+//		try {
+//
+//		}catch (Exception e){}
+//		element.waitUntil(Condition.exactText("Save All"),2000);
+//		element.sendKeys(Keys.ENTER);
+//		element.sendKeys(Keys.RETURN);
+//
+//		$(byXpath("//*[@id=\"kp-request--page\"]/div[3]/kp-card-box[4]/kp-card/kp-card-header/kp-card-actions/kp-link[2]")).click();
+//		((JavascriptExecutor) WebDriverRunner.getWebDriver()).executeScript("arguments[0].click();", element);
 	}
 	
 	public void selectAccount(String account) {

@@ -6,6 +6,7 @@ import ui.pageobjects.Dashboard;
 
 public class DashBoardStepDefs {
 	Dashboard db = new Dashboard();
+
 	@Then("User clicks on data panel")
 	public void user_clicks_on_data_panel() {
 	    db.clickOnDataPanel();
@@ -13,7 +14,6 @@ public class DashBoardStepDefs {
 	
 	@Then("User clicks on {string}")
 	public void user_clicks_on(String formName) {
-
 		db.clickOnForm(formName);
 	}
 
